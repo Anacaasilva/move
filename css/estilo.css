@@ -1,0 +1,30 @@
+body {
+  background-image: url(img/background_house.svg);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_logo {
+  width: 15%;
+}
+
+.header_items {
+  display: flex;
+  gap: 20px;
+}
+
+.header_items-item {
+  text-decoration: none;
+  list-style: none;
+}
+
+.header_items-item a {
+  text-decoration: none;
+}
+
+.header_button a {
+  text-decoration: none;
+}
