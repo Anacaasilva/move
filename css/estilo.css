@@ -67,7 +67,7 @@ header {
 /* estilo Home */
 
 main {
-  height: 80vh;
+  height: 75vh;
   display: flex;
   align-items: center;
   margin: 40px;
@@ -112,4 +112,42 @@ main {
   text-decoration: none;
   text-transform: uppercase;
   color: #F0F0F0;
+}
+
+footer {
+  background-color: #F0F0F0;
+  padding: 20px 0;
+}
+
+.footer_main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer_topics {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer_topics li{
+  font-size: 18px;
+}
+
+.footer_social {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer_copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer_copyright p {
+  font-size: 18px;
 }
