@@ -1,30 +1,115 @@
-body {
-  background-image: url(img/background_house.svg);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
+
+/* estilo Body Home */
+
+body {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../img/home-img.svg');
+}
+
+/* estilo Cabeçalho */
 
 header {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.080);
 }
 
 .header_logo {
-  width: 15%;
+  width: 220px;
 }
 
 .header_items {
+  gap: 40px;
   display: flex;
-  gap: 20px;
 }
 
 .header_items-item {
-  text-decoration: none;
   list-style: none;
+  text-decoration: none;
 }
 
 .header_items-item a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #F0F0F0;
   text-decoration: none;
+  list-style-type: none;
+}
+
+.header_button {
+  height: 35px;
+  width: 170px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: 2px solid #F0F0F0;
+  background-color: transparent;
 }
 
 .header_button a {
+  color: #F0F0F0;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* estilo Home */
+
+main {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  margin: 40px;
+}
+
+.container-infos {
+  gap: 25px;
+  width: 60%;
+  height: 50%;
+  display: flex;
+  margin-left: 50px;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: center;
+}
+
+#slogan {
+  font-size: 40px;
+  font-weight: 700;
+  color: #F0F0F0;
+  margin-bottom: 30px;
+}
+
+.main-frase {
+  color: #F0F0F0;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 1.6;
+}
+
+.main-button {
+  height: 45px;
+  width: 300px;
+  font-weight: 400;
+  font-size: 20px;
+  border-radius: 50px;
+  border: 2px solid #FF3800;
+  background-color: #FF3800;
+}
+
+.main-button a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #F0F0F0;
 }
