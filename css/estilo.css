@@ -174,54 +174,62 @@ footer {
   color: #FF3800;
   text-transform: uppercase;
   justify-self: center;
+  align-self: flex-end;
+  margin-bottom: 20px;
 }
 
 .service-subtitle {
   grid-row: 2;
-  grid-column: 1/5;
+  grid-column: 1 / -1;
   justify-self: center;
-  align-self: center;
+  align-self: flex-start;
   font-size: 40px;
   font-weight: bold;
 }
 
 .service-card {
+  padding: 10%;
   height: 100%;
   width: 90%;
   justify-self: center;
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
 }
 
-.service-card-tel {
+#tel.service-card {
   grid-row: 3;
   grid-column: 2;
-  height: 100%;
-  width: 90%;
-  justify-self: center;
-  border-radius: 20px;
-  padding: 10%;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
 }
 
-.service-card-escudo {
+#escudo.service-card {
   grid-row: 3;
   grid-column: 3;
-  height: 100%;
-  width: 90%;
-  justify-self: center;
-  border-radius: 20px;
-  padding: 10%;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
 }
 
-.service-card-cifrao {
+#cifrao.service-card {
   grid-row: 3;
   grid-column: 4;
-  height: 100%;
-  width: 90%;
+  
+}
+
+.service-card img {
+  grid-row: 1;
   justify-self: center;
-  border-radius: 20px;
-  padding: 10%;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  align-self: center;
+}
+
+.service-card h3 {
+  grid-row: 2;
+  justify-self: center;
+  align-self: center;
+}
+
+.service-card p {
+  grid-row: 3;
+  justify-self: center;
+  align-self: center;
 }
