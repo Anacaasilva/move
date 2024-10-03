@@ -7,6 +7,20 @@
   font-family: "Roboto", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #373737;
+  border: 2px solid transparent;
+}
+
 /* estilo Body Home */
 
 .main_index {
@@ -64,7 +78,11 @@ header {
   text-transform: uppercase;
 }
 
-/* estilo Home */
+.header_button:hover {
+  background-color: #f0f0f040;
+}
+
+/* estilo tela Home */
 
 main {
   height: 75vh;
@@ -73,7 +91,7 @@ main {
   margin: 40px;
 }
 
-.container-infos {
+.container_infos {
   gap: 25px;
   width: 60%;
   height: 50%;
@@ -91,14 +109,14 @@ main {
   margin-bottom: 30px;
 }
 
-.main-frase {
+.main_frase {
   color: #F0F0F0;
   font-weight: 300;
   font-size: 25px;
   line-height: 1.6;
 }
 
-.main-button {
+.main_button {
   height: 45px;
   width: 300px;
   font-weight: 400;
@@ -108,15 +126,23 @@ main {
   background-color: #FF3800;
 }
 
-.main-button a {
+.main_button a {
   text-decoration: none;
   text-transform: uppercase;
   color: #F0F0F0;
 }
 
+.main_button:hover {
+  background-color: #ff370090;
+  border: 2px solid transparent;
+}
+
+
+/* estilo footer */
+
 footer {
   background-color: #F0F0F0;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 .footer_main {
@@ -125,27 +151,27 @@ footer {
 }
 
 .footer_topics {
+  gap: 30px;
   display: flex;
   list-style: none;
   align-items: center;
-  gap: 30px;
 }
 
-.footer_topics li{
+.footer_topics li {
   font-size: 18px;
 }
 
 .footer_social {
+  gap: 20px;
   display: flex;
   list-style: none;
   align-items: center;
-  gap: 20px;
 }
 
 .footer_copyright {
   display: flex;
-  justify-content: center;
   margin-top: 20px;
+  justify-content: center;
 }
 
 .footer_copyright p {
@@ -161,10 +187,12 @@ footer {
   background-color: #FBFAFF;
 }
 
+/* estilo tela Serviços */
+
 .service {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
   grid-template-rows: 1fr 1fr 3fr 1fr;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
 }
 
 .service-title {
@@ -173,84 +201,87 @@ footer {
   font-size: 16px;
   color: #FF3800;
   font-weight: normal;
-  text-transform: uppercase;
+  margin-bottom: 20px;
   justify-self: center;
   align-self: flex-end;
-  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .service-subtitle {
   grid-row: 2;
+  font-size: 40px;
+  font-weight: bold;
   grid-column: 1 / -1;
   justify-self: center;
   align-self: flex-start;
-  font-size: 40px;
-  font-weight: bold;
 }
 
 .service-card {
+  width: 90%;
   padding: 10%;
   height: 100%;
-  width: 90%;
-  justify-self: center;
-  border-radius: 20px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   display: grid;
+  border-radius: 20px;
+  justify-self: center;
   grid-template-rows: repeat(3, 1fr);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 #tel.service-card {
   grid-row: 3;
   grid-column: 2;
-  
+
 }
 
 #escudo.service-card {
   grid-row: 3;
   grid-column: 3;
-  
+
 }
 
 #cifrao.service-card {
   grid-row: 3;
   grid-column: 4;
-  
 }
 
 .service-card img {
   grid-row: 1;
-  justify-self: center;
   align-self: center;
+  justify-self: center;
 }
 
 .service-card h3 {
   grid-row: 2;
-  justify-self: center;
   align-self: center;
+  text-align: center;
+  justify-self: center;
 }
 
 .service-card p {
   grid-row: 3;
-  justify-self: center;
   align-self: center;
+  text-align: center;
+  justify-self: center;
 }
+
+/* estilo tela Como Funciona */
 
 .funcionamento {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
   grid-template-rows: 1fr 1fr 3fr 1fr;
+  grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
 }
 
 .funcionamento-title {
   grid-row: 1;
-  grid-column: 1 / -1;
   font-size: 16px;
   color: #FF3800;
+  grid-column: 1 / -1;
   font-weight: normal;
-  text-transform: uppercase;
+  margin-bottom: 20px;
   justify-self: center;
   align-self: flex-end;
-  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .funcionamento-subtitle {
@@ -276,44 +307,118 @@ footer {
 #um.funcionamento-card {
   grid-row: 3;
   grid-column: 2;
-  
+
 }
 
 #dois.funcionamento-card {
   grid-row: 3;
   grid-column: 3;
-  
+
 }
 
 #tres.funcionamento-card {
   grid-row: 3;
   grid-column: 4;
-  
+
 }
 
 #quatro.funcionamento-card {
   grid-row: 3;
   grid-column: 5;
-  
+
 }
 
 .funcionamento-card h2 {
   grid-row: 1;
-  font-weight: bold;
   font-size: 60px;
   color: #FF3800;
-  justify-self: center;
+  font-weight: bold;
   align-self: center;
+  text-align: center;
+  justify-self: center;
 }
 
 .funcionamento-card h3 {
   grid-row: 2;
-  justify-self: center;
   align-self: center;
+  text-align: center;
+  justify-self: center;
 }
 
 .funcionamento-card p {
   grid-row: 3;
-  justify-self: center;
   align-self: center;
+  text-align: center;
+  justify-self: center;
+}
+
+/* estilo tela Orçamento */
+
+
+/* estilo tela Sobre Nós */
+
+.container_img_notebook {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#notebook {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_descricao {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  margin-left: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.title_sobre {
+  font-size: 40px;
+  font-weight: 800;
+  color: #FF3800;
+  margin-bottom: 20px;
+}
+
+.container_descricao h2 {
+  margin: 30px 0;
+  font-size: 22px;
+}
+
+.container_descricao p {
+  margin: 15px 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.sobre_button {
+  height: 45px;
+  width: 310px;
+  font-size: 22px;
+  margin-top: 35px;
+  font-weight: 400;
+  border-radius: 50px;
+  border: 2px solid #FF3800;
+  background-color: #FF3800;
+}
+
+.sobre_button:hover {
+  background-color: #ff370090;
+  border: 2px solid #FFFFFF;
+}
+
+.sobre_button a {
+  color: #F0F0F0;
+  text-decoration: none;
+  text-transform: uppercase;
 }
