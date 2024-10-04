@@ -23,8 +23,85 @@
     <button class="header_button"><a href="orcamento_inicio.html">Faça um orçamento</a></button>
   </header>
 
-  <main class="main_service">
-    
+  <main class="orcamento">
+    <h2 class="orcamento-title">Tenha seu orçamento em apenas quatro etapas</h2>
+    <h3 class="orcamento-subtitle" >Orçamento</h3>
+
+    <form id="forms_tres">
+      <h2 class="forms_tres-title">Nos conte um pouco mais sobre sua mudança</h2>
+      
+      <div class="forms-topics">
+        <span class="selected_span">1</span>
+        <p class="selected_p">Suas informações</p>
+        <hr class="selected_hr">
+        <span class="selected_span">2</span>
+        <p class="selected_p">Itens da mudança</p>
+        <hr class="selected_hr">
+        <span class="selected_span">3</span>
+        <p class="selected_p">Sua localização</p>
+        <hr class="selected_hr">
+        <span class="form_span">4</span>
+        <p class="form_p">Locatização entrega</p>
+      </div>
+
+      <div class="forms-endereco-retirada">
+        <label for="endereco-retirada">Endereço para retirada</label>
+        <input type="text" name="endereco-retirada" placeholder="Ex: Rua 123, n9, Centro" id="endereco-retirada">
+      </div>
+
+      <div class="forms-cidade">
+        <label for="cidade">Cidade</label>
+        <input type="text" name="cidade" placeholder="Garça" id="cidade">
+      </div>
+
+      <div class="forms-data">
+        <label for="data">Data de envio</label>
+        <input type="date" name="data" id="data">
+      </div>
+
+      <div class="forms-cep">
+        <label for="cep">CEP</label>
+        <input type="number" name="cep" placeholder="17400000" id="cep">
+      </div>
+
+      <div class="forms-estado">
+        <label for="estado">Estado</label>
+        <select name="estado" id="estado">
+          <option class="option_select" value="grande">Acre</option>
+          <option class="option_select" value="medio">Alagoas</option>
+          <option class="option_select" value="pequeno">Amapá</option>
+          <option class="option_select" value="grande">Amazonas</option>
+          <option class="option_select" value="medio">Bahia</option>
+          <option class="option_select" value="pequeno">Ceará</option>
+          <option class="option_select" value="grande">Espírito Santo</option>
+          <option class="option_select" value="medio">Goiás</option>
+          <option class="option_select" value="pequeno">Maranhão</option>
+          <option class="option_select" value="grande">Mato Grosso</option>
+          <option class="option_select" value="medio">Mato Grosso do Sul</option>
+          <option class="option_select" value="pequeno">Minas Gerais</option>
+          <option class="option_select" value="grande">Pará</option>
+          <option class="option_select" value="medio">Paraíba</option>
+          <option class="option_select" value="pequeno">Parana</option>
+          <option class="option_select" value="grande">Pernambuco</option>
+          <option class="option_select" value="medio">Piauí</option>
+          <option class="option_select" value="pequeno">Rio de Janeiro</option>
+          <option class="option_select" value="grande">Rio Grande do Norte</option>
+          <option class="option_select" value="medio">Rio Grande do Sul</option>
+          <option class="option_select" value="pequeno">Rondônia</option>
+          <option class="option_select" value="grande">Roraima</option>
+          <option class="option_select" value="medio">Santa Catarina</option>
+          <option class="option_select" value="pequeno">São Paulo</option>
+          <option class="option_select" value="grande">Sergipe</option>
+          <option class="option_select" value="medio">Tocantins</option>
+          <option class="option_select" value="pequeno">Distrito Federal</option>
+        </select>
+      </div>
+
+      <div class="buttons">
+        <button class="forms-button-back"><a href="./orcamento_dois.html">Voltar</a></button>
+        <button class="forms-button"><a href="./orcamento_quatro.html">Próximo</a></button>
+      </div>
+    </form>
   </main>
 
   <footer>
