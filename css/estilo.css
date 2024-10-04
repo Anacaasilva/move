@@ -12,13 +12,13 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: rgb(255, 255, 255);
+  background: #373737;
 }
 
 body::-webkit-scrollbar-thumb {
   border-radius: 20px;
-  background-color: #373737;
   border: 2px solid transparent;
+  background: rgb(255, 255, 255);
 }
 
 /* estilo Body Home */
@@ -352,9 +352,6 @@ footer {
   justify-self: center;
 }
 
-/* estilo tela Orçamento */
-
-
 /* estilo tela Sobre Nós */
 
 .container_img_notebook {
@@ -422,6 +419,8 @@ footer {
   text-decoration: none;
   text-transform: uppercase;
 }
+
+/* estilo tela Orçamento */
 
 .orcamento {
   display: flex;
@@ -731,7 +730,7 @@ footer {
   width: 15px;
 }
 
-.tipo-residencial input[type="radio"]:checked + ::before {
+.tipo-residencial input[type="radio"]:checked+ ::before {
   background-color: #333333;
 }
 
@@ -991,4 +990,18 @@ footer {
   color: #F0F0F0;
 }
 
+.forms_tres-title {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  justify-self: center;
+  font-size: 40px;
+  font-weight: bold;
+}
 
+.forms_quatro-title {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  justify-self: center;
+  font-size: 40px;
+  font-weight: bold;
+}
