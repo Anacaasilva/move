@@ -63,6 +63,10 @@ header {
   list-style-type: none;
 }
 
+.header_items-item a:hover {
+  color: #ec653f;
+}
+
 .header_button {
   height: 35px;
   width: 170px;
@@ -80,6 +84,10 @@ header {
 
 .header_button:hover {
   background-color: #f0f0f040;
+}
+
+.header_selected {
+  color: #FF3800;
 }
 
 /* estilo tela Home */
@@ -814,7 +822,7 @@ footer {
   gap: 30px 0;
 }
 
-.forms-endereco-retirada {
+.forms-endereco {
   grid-template-columns: 1;
   grid-row: 3;
   display: grid;
@@ -822,14 +830,14 @@ footer {
   justify-content: center;
 }
 
-.forms-endereco-retirada label {
+.forms-endereco label {
   align-self: flex-end;
   margin-bottom: 15px;
   font-size: 20;
   font-weight: bold;
 }
 
-.forms-endereco-retirada input {
+.forms-endereco input {
   width: 450px;
   height: 44px;
   border-radius: 5px;

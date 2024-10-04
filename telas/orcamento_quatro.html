@@ -12,13 +12,15 @@
   <header class="generic_header">
     <img class="header_logo" src="../img/logo_header.svg" alt="Logo Move">
 
-    <ul class="header_items">
-      <li class="header_items-item"><a href="../index.html">Início</a></li>
-      <li class="header_items-item"><a href="./servico.html">Serviços</a></li>
-      <li class="header_items-item"><a href="./funcionamento.html">Como Funciona</a></li>
-      <li class="header_items-item"><a href="./orcamento_inicio.html">Orçamento</a></li>
-      <li class="header_items-item"><a href="./sobre.html">Sobre nós</a></li>
-    </ul>
+    <nav>
+      <ul class="header_items">
+        <li class="header_items-item"><a href="../index.html">Início</a></li>
+        <li class="header_items-item"><a href="./servico.html">Serviços</a></li>
+        <li class="header_items-item"><a href="./funcionamento.html">Como Funciona</a></li>
+        <li class="header_items-item"><a href="./orcamento_inicio.html">Orçamento</a></li>
+        <li class="header_items-item"><a href="./sobre.html">Sobre nós</a></li>
+      </ul>
+    </nav>
 
     <button class="header_button"><a href="orcamento_inicio.html">Faça um orçamento</a></button>
   </header>
@@ -40,13 +42,13 @@
         <span class="selected_span">3</span>
         <p class="selected_p">Sua localização</p>
         <hr class="selected_hr">
-        <span class="form_span">4</span>
-        <p class="form_p">Locatização entrega</p>
+        <span class="selected_span">4</span>
+        <p class="selected_p">Locatização entrega</p>
       </div>
 
-      <div class="forms-endereco-entrega">
-        <label for="endereco-entrega">Endereço para entrega</label>
-        <input type="text" name="endereco-entrega" placeholder="Ex: Rua 123, n9, Centro" id="endereco-entrega">
+      <div class="forms-endereco">
+        <label for="endereco">Endereço para entrega</label>
+        <input type="text" name="endereco" placeholder="Ex: Rua 123, n9, Centro" id="endereco">
       </div>
 
       <div class="forms-cidade">
@@ -56,12 +58,7 @@
 
       <div class="forms-cep">
         <label for="cep">CEP</label>
-        <input type="number" name="cep" placeholder="17400000" id="cep">
-      </div>
-
-      <div class="forms-cep">
-        <label for="cep">Data de envio</label>
-        <input type="number" name="cep" placeholder="17400000" id="cep">
+        <input type="tel" name="cep" placeholder="17400000" id="cep">
       </div>
 
       <div class="forms-estado">
@@ -99,7 +96,7 @@
 
       <div class="buttons">
         <button class="forms-button-back"><a href="./orcamento_tres.html">Voltar</a></button>
-        <button class="forms-button"><a href="./orcamento_conclusao.html">Próximo</a></button>
+        <button type="submit" class="forms-button"><a href="./orcamento_conclusao.html">Finalizar</a></button>
       </div>
     </form>
   </main>
